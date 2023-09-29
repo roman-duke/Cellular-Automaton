@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Conway</title>
+      <script src="https://kit.fontawesome.com/2ce9c1279e.js" crossorigin="anonymous"></script>
+      <style>
+          body {
+              margin: 0;
+              padding: 0;
+          }
+
+          canvas {
+              display: flex;
+          }
+      </style>
+  </head>
+  <body>
+      <header class="header">
+          <h1>Conway's Game of Life</h1>
+      </header>
+
+      <div class="canv-container">
+          <div class="canv-inner"><canvas id="canvas" width="1400" height="550"></canvas></div>
+      </div>
+
+      <div class="menu-bar">
+          <div class="icon" id="info"><span><i class="fa-solid fa-circle-info"></i></span>Explanation</div>
+          <div class="icon" id="start"><span><i class="fa-solid fa-play"></i></span>Start</div>
+          <div class="icon" id="stop" style="display:none;"><span><i class="fa-solid fa-stop"></i></span>Stop</div>
+          <div class="icon" id="reset"><span><i class="fa-solid fa-rotate-left"></i></span>Reset</div>
+      </div>
+
+      <script type="module" src='./src/index.js'></script>
+  </body>
+</html>
